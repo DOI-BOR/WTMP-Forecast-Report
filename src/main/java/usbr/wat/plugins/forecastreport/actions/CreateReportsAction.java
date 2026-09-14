@@ -41,7 +41,7 @@ import usbr.wat.plugins.actionpanel.ActionPanelPlugin;
 import usbr.wat.plugins.actionpanel.ActionsWindow;
 import usbr.wat.plugins.actionpanel.actions.AbstractReportAction;
 import usbr.wat.plugins.actionpanel.io.ReportOptions;
-import usbr.wat.plugins.actionpanel.model.ForecastReportingPlugin;
+import usbr.wat.plugins.actionpanel.model.forecast.ForecastReportingPlugin;
 import usbr.wat.plugins.actionpanel.model.ReportsManager;
 import usbr.wat.plugins.actionpanel.model.SimulationReportInfo;
 import usbr.wat.plugins.actionpanel.ui.UsbrPanel;

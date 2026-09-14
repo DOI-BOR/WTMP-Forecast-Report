@@ -19,7 +19,7 @@ import usbr.wat.plugins.actionpanel.io.ReportXmlFile;
 import usbr.wat.plugins.actionpanel.model.AbstractSimulationGroup;
 import usbr.wat.plugins.actionpanel.model.SimulationReportInfo;
 import usbr.wat.plugins.actionpanel.model.forecast.EnsembleReportInfo;
-import usbr.wat.plugins.actionpanel.model.forecast.ForecastSimGroup;
+import usbr.wat.plugins.actionpanel.model.forecast.ForecastSimulationGroup;
 
 public class ForecastReportXmlFile extends ReportXmlFile
 {
@@ -34,7 +34,7 @@ public class ForecastReportXmlFile extends ReportXmlFile
 	private static final String MEMBERS_TO_REPORT = "MembersToReport";
 	private static final String FORECAST_TYPE = "Forecast";
 	private List<EnsembleReportInfo> _ensembleInfos;
-	private ForecastSimGroup _simulationGroup;
+	private ForecastSimulationGroup _simulationGroup;
 
 	public ForecastReportXmlFile(String filename)
 	{
@@ -71,7 +71,7 @@ public class ForecastReportXmlFile extends ReportXmlFile
 		_ensembleInfos = ensembleReportInfos;
 	}
 
-	public void setSimulationGroup(ForecastSimGroup simulationGroup)
+	public void setSimulationGroup(ForecastSimulationGroup simulationGroup)
 	{
 		_simulationGroup = simulationGroup;
 	}

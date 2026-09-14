@@ -57,19 +57,19 @@ import usbr.wat.plugins.actionpanel.actions.forecast.RunForecastSimulationAction
 import usbr.wat.plugins.actionpanel.editors.ReportOptionsPanel;
 import usbr.wat.plugins.actionpanel.editors.TemplateWrapper;
 import usbr.wat.plugins.actionpanel.io.ReportOptions;
-import usbr.wat.plugins.actionpanel.model.ForecastReportingPlugin;
+import usbr.wat.plugins.actionpanel.model.forecast.ForecastReportingPlugin;
 import usbr.wat.plugins.actionpanel.model.ReportPlugin;
 import usbr.wat.plugins.actionpanel.model.ReportsManager;
 import usbr.wat.plugins.actionpanel.model.SimulationReportInfo;
 import usbr.wat.plugins.actionpanel.model.forecast.EnsembleReportInfo;
 import usbr.wat.plugins.actionpanel.model.forecast.EnsembleSet;
-import usbr.wat.plugins.actionpanel.model.forecast.ForecastSimGroup;
+import usbr.wat.plugins.actionpanel.model.forecast.ForecastSimulationGroup;
 import usbr.wat.plugins.actionpanel.ui.UsbrPanel;
 
 
 import static rma.swing.ButtonCmdPanel.CLOSE_BUTTON;
 import static rma.swing.ButtonCmdPanel.OK_BUTTON;
-import static usbr.wat.plugins.actionpanel.editors.DisplayReportsSelector.REPORTS_DIRS;
+import static usbr.wat.plugins.actionpanel.editors.forecast.DisplayReportsSelector.REPORTS_DIRS;
 
 public class DisplayForecastReportsSelector extends RmaJDialog
 {
@@ -356,7 +356,7 @@ public class DisplayForecastReportsSelector extends RmaJDialog
 		_ensembleTable.deleteCells();
 		boolean canBeComparisionReport = sims.size()>1;
 		ReportPlugin plugin;
-		ForecastSimGroup simGroup = (ForecastSimGroup) _parent.getSimulationGroup();
+		ForecastSimulationGroup simGroup = (ForecastSimulationGroup) _parent.getSimulationGroup();
 		Vector<Object> row;
 		_sims = sims;
 		for(int s = 0;s < sims.size();s++ )
